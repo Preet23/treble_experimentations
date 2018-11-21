@@ -47,6 +47,7 @@ ROM types:
   aicp
   aokp
   aex
+  aex9.x
   slim
   havoc
 
@@ -174,6 +175,13 @@ function get_rom_type() {
                 mainrepo="https://github.com/AospExtended/manifest.git"
                 mainbranch="8.1.x"
                 localManifestBranch="android-8.1"
+                treble_generate="aex"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                ;;
+	    aex)
+                mainrepo="https://github.com/AospExtended/manifest.git"
+                mainbranch="9.x"
+                localManifestBranch="android-9.0"
                 treble_generate="aex"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
