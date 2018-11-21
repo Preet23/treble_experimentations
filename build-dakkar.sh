@@ -178,7 +178,7 @@ function get_rom_type() {
                 treble_generate="aex"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
-	    aex)
+	    aex9.x)
                 mainrepo="https://github.com/AospExtended/manifest.git"
                 mainbranch="9.x"
                 localManifestBranch="android-9.0"
