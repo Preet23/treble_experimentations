@@ -45,6 +45,7 @@ ROM types:
   crdroid
   mokee
   aicp
+  aicp90
   aokp
   aex
   aex9.x
@@ -161,6 +162,13 @@ function get_rom_type() {
                 mainrepo="https://github.com/AICP/platform_manifest.git"
                 mainbranch="o8.1"
                 localManifestBranch="android-8.1"
+                treble_generate="aicp"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                ;;
+	    aicp)
+                mainrepo="https://github.com/AICP/platform_manifest.git"
+                mainbranch="p9.0"
+                localManifestBranch="android-9.0"
                 treble_generate="aicp"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
