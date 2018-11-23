@@ -51,6 +51,7 @@ ROM types:
   aex9.x
   slim
   havoc
+  aoscp
 
 Variants are dash-joined combinations of (in order):
 * processor type
@@ -207,6 +208,12 @@ function get_rom_type() {
                 treble_generate="havoc"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
+	    aoscp)
+	        mainrepo="https://github.com/CypherOS/platform_manifest"
+                mainbranch="poundcake-release"
+                localManifestBranch="android-9.0"
+                treble_generate="aoscp"
+                extra_make_options="WITHOUT_CHECK_API=true"
         esac
         shift
     done
